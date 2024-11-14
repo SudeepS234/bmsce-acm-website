@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer {
+  position: relative;
+  top: 40vh;
+  width: 100%;
+  background: #000d46;
+  min-height: 150px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.social-icon,
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  list-style: none;
+  padding: 0;
+}
+
+.social-icon__item,
+.menu__item {
+  margin: 0 10px;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon__link:hover {
+  transform: translateY(-5px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Waves Background */
+.waves {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: url("./images/waves.svg") repeat-x;
+  /* background-color: #000d46; */
+  background-size: 1000px 100px;
+  opacity: 0.5;
+  animation: animate 4s linear infinite;
+}
+
+.wave#wave1 {
+  bottom: 0;
+  z-index: 1000;
+  opacity: 1;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  bottom: 10px;
+  z-index: 999;
+  animation: animateWaves 6s linear infinite;
+  opacity: 0.5;
+}
+
+.wave#wave3 {
+  bottom: 15px;
+  z-index: 1000;
+  opacity: 0.3;
+  animation: animateWaves 8s linear infinite;
+}
+
+.wave#wave4 {
+  bottom: 20px;
+  z-index: 999;
+  opacity: 0.7;
+  animation: animateWaves 10s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+
+

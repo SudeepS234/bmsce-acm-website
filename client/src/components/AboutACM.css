@@ -1,0 +1,9 @@
+.carousel {
+    position: relative;
+    top: 20vh;
+    bottom: 20vh;
+}
+
+.imageSlider {
+    padding: 10%;
+}

@@ -1,0 +1,8 @@
+.gallery-img img{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.gallery-img {
+    columns: 300px;
+}
