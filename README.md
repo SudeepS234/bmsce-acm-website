@@ -1,7 +1,14 @@
 BMSCE ACM Student Chapter's Official Website built entirely using ReactJS.
 
-run> npm install 
-In the directory terminal to install the required libraries.
+1.
+```
+npm install 
+```
+Run this in the terminal to install the required libraries.
 
-run> npm run dev
+2.
+```
+npm run dev
+```
+
 To test the website in your localhost.
