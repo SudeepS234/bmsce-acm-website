@@ -34,7 +34,7 @@ const Footer = ({ scrollToSection }) => {
         </li>
       </ul>
       <ul className="menu">
-        <li className="menu__item"><a className="menu__link" href="/">Home</a></li>
+        <li className="menu__item" onClick={() => scrollToSection('homepage')}><a className="menu__link" href="/">Home</a></li>
         <li className="menu__item" onClick={() => scrollToSection('events')}><a className="menu__link">Events</a></li>
         <li className="menu__item" onClick={() => scrollToSection('news')}><a className="menu__link">News</a></li>
         <li className="menu__item" onClick={() => scrollToSection('gallery')}><a className="menu__link">Gallery</a></li>

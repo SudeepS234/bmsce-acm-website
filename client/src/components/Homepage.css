@@ -1,245 +1,285 @@
 /* Keyframes for left-to-right slide-in animation */
 @keyframes slideInFromLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
   }
-  
-  /* Styling for .quick section */
-  .quick {
-    background-color: black;
-    color: white;
-    max-width: 70vw;
-    margin: 20px auto;
-    padding: 50px;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    opacity: 0;                    /* Hidden initially */
-    transform: translateX(-20%);   /* Start off-screen to the left */
-    transition: opacity 0.2s ease-out, transform 0.8s ease-out; /* Increase duration */
-  }
-  
-  /* Animation when in view */
-  .quick.animate {
+
+  100% {
     opacity: 1;
-    transform: translateX(0); /* Slide in from the left */
+    transform: translateX(0);
   }
-  
-  .quick-about-us {
-    text-align: left;
-  }
-  
-  
-  .about-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  
-  .about-content p {
-    font-size: large;
-    line-height: 2.0;
-    max-width: 60ch;
-    margin-top: 0;
-  }
-
-  .quick-about-us h1{
-    margin-bottom: 1rem;
-  }
-  
-  .about-us-image {
-    position: relative;
-    top: -10px;
-    max-width: 450px;
-    border-radius: 15px;
-  }
-  
-  /* Responsive Styling */
-  @media (max-width: 768px) {
-    .about-content {
-      flex-direction: column;
-      align-items: center;
-      text-align: left;
-    }
-  
-    .about-us-image {
-      margin-bottom: 20px;
-      top: 0;
-      max-width: 80vw;
-    }
-  
-    .quick {
-      max-width: 90vw;
-      padding: 20px;
-    }
-  }
-
-  @media (max-width: 1540px) {
-    .about-content {
-      flex-direction: column;
-      align-items: center;
-      text-align: left;
-    }
-  
-    .about-us-image {
-      margin-bottom: 20px;
-      top: 0;
-      max-width: 80vw;
-    }
-  
-    .quick {
-      max-width: 90vw;
-      padding: 20px;
-    }
-  }
-
-  .homepage-section {
-    min-height: calc(100vh - 56px);
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-top: 20px;
-    text-align: left;
-    margin-left: 20px;
-    /* Adjust for left margin */
-  }
-  
-  /* Logo styling */
-  .brand-logo-large {
-    width: 300px;
-    height: auto;
-    position: relative;
-    animation: fadeIn 1s forwards;
-  }
-  
-  /* Fade-in animation */
-  @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-  
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-  }
-  
-  /* Tagline styling */
-  .tagline {
-    font-size: 6rem;
-    color: white;
-    margin-top: 20px;
-    white-space: normal;
-    overflow: hidden;
-    display: inline;
-    /* Changed to inline-block */
-    flex-wrap: wrap;
-    max-width: 85%;
-    /* Adjusted to fit the model */
-    line-height: 1.2;
-    margin-right: 20px;
-    /* Space between tagline and model */
-  }
-  
-  @media (max-width: 768px) {
-    .tagline {
-        font-size: 2.5rem;
-    }
-  }
-  
-  .d-flex {
-    flex-direction: column;
-  }
-  
-  /* 3D Model styling */
-  .model-container {
-    width: 300px;
-    /* Adjust as needed */
-    height: 300px;
-    /* Adjust as needed */
-    position: absolute;
-    /* For absolute positioning */
-    right: 12%;
-    top: 45%;
-  }
-  
-  .social-links {
-    flex-direction: row;
-  }
-  /* Hide the model container on mobile devices */
-  @media (max-width: 900px) {
-    .model-container {
-        display: none;
-        /* Hide on mobile */
-    }
-  }
-  
-  /* Oval shadow effect */
-  .model-shadow {
-    position: absolute;
-    bottom: -20px;
-    /* Position the shadow below the model */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    /* Width of the shadow */
-    height: 50px;
-    /* Height of the shadow */
-    background: rgba(255, 255, 255, 0.2);
-    /* Shadow color */
-    border-radius: 50%;
-    /* Make it oval */
-    filter: blur(30px);
-    /* Shadow blur */
-    z-index: -1;
-    /* Behind the model */
-  }
-
-  .mb-3 {
-    position: relative;
-    top: 30vh;
-    bottom: 30vh;
-    margin: 10em auto;
-    display: flex;
-    gap: 50px;
-    width: 50vw;
-  }
-
-  .card-body {
-    padding: 3em;
-  }
-
-  .img-fluid1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding-top: 40vh;
-    transform: translate(-50%, -50%);
-    width: 90vw;   /* 90% of the viewport width */
-    max-height: 90vh; /* 90% of the viewport height */
-    object-fit: cover; /* Ensures the image scales without distorting */
 }
 
-  
-  .image-container {
-    position: relative;
-    padding: 10%;
-    display: flex;
+/* Styling for .quick section */
+.quick {
+  background-color: black;
+  color: white;
+  max-width: 70vw;
+  margin: 20px auto;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  /* Hidden initially */
+  transform: translateX(-20%);
+  /* Start off-screen to the left */
+  transition: opacity 0.2s ease-out, transform 0.8s ease-out;
+  /* Increase duration */
+}
+
+/* Animation when in view */
+.quick.animate {
+  opacity: 1;
+  transform: translateX(0);
+  /* Slide in from the left */
+}
+
+.quick-about-us {
+  text-align: left;
+}
+
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.about-content p {
+  font-size: large;
+  line-height: 2.0;
+  max-width: 60ch;
+  margin-top: 0;
+}
+
+.quick-about-us h1 {
+  margin-bottom: 1rem;
+}
+
+.about-us-image {
+  position: relative;
+  top: -10px;
+  max-width: 450px;
+  border-radius: 15px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 40vh; /* Adjusts position without overlap */
+    text-align: left;
   }
-  
-  /* Adjust image size for larger screens */
-  @media (min-width: 1200px) {
-    .img-fluid1 {
-      max-width: 80vw;
-    }
+
+  .about-us-image {
+    margin-bottom: 20px;
+    top: 0;
+    max-width: 80vw;
   }
-  
+
+  .quick {
+    max-width: 90vw;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1540px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .about-us-image {
+    margin-bottom: 20px;
+    top: 0;
+    max-width: 80vw;
+  }
+
+  .quick {
+    max-width: 90vw;
+    padding: 20px;
+  }
+}
+
+.homepage-section {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 20px;
+  text-align: left;
+  margin-left: 20px;
+  /* Adjust for left margin */
+}
+
+/* Logo styling */
+.brand-logo-large {
+  width: 300px;
+  height: auto;
+  position: relative;
+  animation: fadeIn 1s forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.typewriter {
+  display: flex;
+}
+/* Tagline styling */
+.tagline{
+  font-size: 6rem;
+  color: white;
+  margin-top: 20px;
+  /* white-space: normal; */
+  overflow: hidden;
+  /* display: inline; */
+  /* Changed to inline-block */
+  /* flex-wrap: wrap;
+  max-width: 85%; */
+  /* Adjusted to fit the model */
+  line-height: 1.2;
+  margin-right: 20px;
+  /* Space between tagline and model */
+  margin-inline: auto;
+  white-space: nowrap;
+  /* border-right: 1px solid; */
+  animation: typing 3s steps(22) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@media (max-width: 768px) {
+  .tagline {
+    font-size: 2.5rem;
+  }
+}
+
+.d-flex {
+  flex-direction: column;
+}
+
+/* 3D Model styling */
+.model-container {
+  width: 300px;
+  /* Adjust as needed */
+  height: 300px;
+  /* Adjust as needed */
+  position: absolute;
+  /* For absolute positioning */
+  right: 12%;
+  top: 45%;
+}
+
+.social-links {
+  flex-direction: row;
+}
+
+/* Hide the model container on mobile devices */
+@media (max-width: 900px) {
+  .model-container {
+    display: none;
+    /* Hide on mobile */
+  }
+}
+
+/* Oval shadow effect */
+.model-shadow {
+  position: absolute;
+  bottom: -20px;
+  /* Position the shadow below the model */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  /* Width of the shadow */
+  height: 50px;
+  /* Height of the shadow */
+  background: rgba(255, 255, 255, 0.2);
+  /* Shadow color */
+  border-radius: 50%;
+  /* Make it oval */
+  filter: blur(30px);
+  /* Shadow blur */
+  z-index: -1;
+  /* Behind the model */
+}
+
+.mb-3 {
+  position: relative;
+  top: 20vh;
+  bottom: 20vh;
+  margin: 15em auto;
+  display: flex;
+  gap: 50px;
+  width: 70vw;
+  margin-bottom: 20vh;
+}
+
+.card-body {
+  padding: 3em;
+}
+
+.col-md-4 {
+  display: flex;
+  /* Enables flexbox */
+  align-items: center;
+  /* Vertically centers the content */
+  justify-content: center;
+}
+
+.team-image {
+  width: 80%;
+  height: auto;
+}
+
+.responsive {
+  position: relative;
+  top: 25vh;
+} 
+
+.responsive p{
+  position: relative;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+} 
+
+
+@media screen and (max-width: 500px) {
+  .responsive {
+    padding: 0px 20px;
+  }
+
+  .responsive img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* .g-0 {
+  margin: 0.5em;
+} */

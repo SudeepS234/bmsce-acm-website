@@ -3,10 +3,12 @@ import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
 import './App.css';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const scrollToSection = (section) => {
     const sectionMap = {
+      homepage: document.getElementById('homepage'),
       aboutACM: document.getElementById('aboutACM'),
       events: document.getElementById('events'),
       news: document.getElementById('acmglobal'),
@@ -26,6 +28,7 @@ function App() {
       <Navbar scrollToSection={scrollToSection}/>
       <Homepage scrollToSection={scrollToSection}/>
       <Footer scrollToSection={scrollToSection}/>
+      <ScrollToTop />
     </div>
   );
 }

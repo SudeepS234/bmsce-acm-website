@@ -44,12 +44,16 @@ const Homepage = ({ scrollToSection }) => {
 
   return (
     <>
-      <section className="homepage-section">
+      <section className="homepage-section" id='homepage'>
         <div className="container d-flex">
           <div className="big-brand-image">
             <img src="./images/logo.png" alt="Brand Logo" className="brand-logo-large fade-in" />
           </div>
-          <h2 className="tagline">{taglineText}</h2>
+          <div className='typewriter'>
+            <div>
+              <p className="tagline">Transforming Passion into Progress.</p>
+            </div>          
+          </div>
         </div>
       </section>
 
@@ -71,34 +75,34 @@ const Homepage = ({ scrollToSection }) => {
         <AboutACM />
       </div>
 
-      <div class="card mb-3" style={cardStyles}>
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="Image" />
+      <div className="card mb-3" style={cardStyles}>
+        <div className="row g-0">
+          <div className="col-md-4">
+            <img src="./images/gowrishankar.png" className="img-fluid rounded-start" alt="Image" />
           </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          <div className="col-md-8">
+            <div className="card-body">
+              <h5 className="card-title">Dr Gowrishankar</h5>
+              <p className="card-text">Dean Academics, BMSCE.</p>
             </div>
           </div>
         </div>
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="Image" />
+        <div className="row g-0">
+          <div className="col-md-4">
+            <img src="./images/seemanthini.png" className="img-fluid rounded-start" alt="Image" />
           </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          <div className="col-md-8">
+            <div className="card-body">
+              <h5 className="card-title">Dr Seemanthini K Gowda</h5>
+              <p className="card-text">Associate Professor, Department of Machine Learning, BMSCE.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="image-container">
-        {/* <img src="./images/TEAM_2024.png" class="img-fluid1" alt="Team Image" /> */}
+      <div className='responsive'>
+        <p>
+          <img className='team-image' src='./images/TEAM_2024.png' alt='TEAM Image' />
+        </p>
       </div>
       <div>
         <Gallery />
