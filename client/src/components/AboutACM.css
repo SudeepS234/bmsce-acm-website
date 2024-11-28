@@ -6,6 +6,8 @@
 
 .imageSlider {
     padding: 10%;
-    position: relative;
-    top: 20vh;
+}
+
+* {
+    margin-bottom: 10vh;
 }

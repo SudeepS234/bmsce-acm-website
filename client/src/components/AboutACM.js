@@ -8,7 +8,6 @@ import { height, width } from '@fortawesome/free-solid-svg-icons/fa0';
 
 const AboutACM = ({ slides }) => {
     return (
-        <>
             <div id='acmglobal' className='imageSlider'>
                 <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-indicators">
@@ -76,7 +75,6 @@ const AboutACM = ({ slides }) => {
                     </button>
                 </div>
             </div>
-        </>
     )
 }
 

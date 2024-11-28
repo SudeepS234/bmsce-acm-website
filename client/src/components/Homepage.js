@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import Events from './Events';
 import AboutACM from './AboutACM';
+import TeamSection from './TeamSection';
 import './Homepage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Gallery from './Gallery';
@@ -52,7 +53,7 @@ const Homepage = ({ scrollToSection }) => {
           <div className='typewriter'>
             <div>
               <p className="tagline">Transforming Passion into Progress.</p>
-            </div>          
+            </div>
           </div>
         </div>
       </section>
@@ -75,7 +76,7 @@ const Homepage = ({ scrollToSection }) => {
         <AboutACM />
       </div>
 
-      <div className="card mb-3" style={cardStyles}>
+      {/* <div className="card mb-3" style={cardStyles}>
         <div className="row g-0">
           <div className="col-md-4">
             <img src="./images/gowrishankar.png" className="img-fluid rounded-start" alt="Image" />
@@ -98,7 +99,12 @@ const Homepage = ({ scrollToSection }) => {
             </div>
           </div>
         </div>
+      </div> */}
+
+      <div className="min-h-screen bg-gray-50">
+        <TeamSection />
       </div>
+
       <div className='responsive'>
         <p>
           <img className='team-image' src='./images/TEAM_2024.png' alt='TEAM Image' />
