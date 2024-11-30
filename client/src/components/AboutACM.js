@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 import './AboutACM.css';
-// index.js or App.js
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Includes JavaScript needed for carousel functionality
-
-import { height, width } from '@fortawesome/free-solid-svg-icons/fa0';
 
 const AboutACM = ({ slides }) => {
     return (
@@ -34,25 +31,13 @@ const AboutACM = ({ slides }) => {
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src="https://via.placeholder.com/800x400" className="d-block w-100" alt="First slide" />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
+                            <img src="./images/summit-flyer.jpg" className="d-block w-100" alt="First slide"/>
                         </div>
                         <div className="carousel-item">
-                            <img src="https://via.placeholder.com/800x400" className="d-block w-100" alt="Second slide" />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
+                            <img src="./images/chapter-spotlight.png" className="d-block w-100" alt="Second slide" />
                         </div>
                         <div className="carousel-item">
-                            <img src="https://via.placeholder.com/800x400" className="d-block w-100" alt="Third slide" />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
+                            <img src="./images/acm-carousel-3.png" className="d-block w-100" alt="Third slide" />
                         </div>
                     </div>
                     <button

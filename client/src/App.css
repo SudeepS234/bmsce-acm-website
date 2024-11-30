@@ -13,6 +13,7 @@
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Gradient animation (optional) */
@@ -33,7 +34,7 @@
 /* Navbar styling */
 .navbar {
   background: transparent;
-  padding: 1rem 2rem;
+  padding: 1rem 0 1rem 0.5rem;
 }
 
 /* Brand styling with logo */
@@ -102,17 +103,6 @@
   height: 200px;
 }
 
-/* Homepage Section */
-.homepage-section {
-  min-height: calc(100vh - 56px);
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-top: 20px;
-  text-align: left;
-  margin-left: 20px;
-  /* Adjust for left margin */
-}
 
 /* Logo styling */
 .brand-logo-large {
@@ -158,50 +148,3 @@
   }
 }
 
-.d-flex {
-  flex-direction: column;
-}
-
-/* 3D Model styling */
-.model-container {
-  width: 300px;
-  /* Adjust as needed */
-  height: 300px;
-  /* Adjust as needed */
-  position: absolute;
-  /* For absolute positioning */
-  right: 12%;
-  top: 45%;
-}
-
-.social-links {
-  flex-direction: row;
-}
-/* Hide the model container on mobile devices */
-@media (max-width: 900px) {
-  .model-container {
-      display: none;
-      /* Hide on mobile */
-  }
-}
-
-/* Oval shadow effect */
-.model-shadow {
-  position: absolute;
-  bottom: -20px;
-  /* Position the shadow below the model */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  /* Width of the shadow */
-  height: 50px;
-  /* Height of the shadow */
-  background: rgba(255, 255, 255, 0.2);
-  /* Shadow color */
-  border-radius: 50%;
-  /* Make it oval */
-  filter: blur(30px);
-  /* Shadow blur */
-  z-index: -1;
-  /* Behind the model */
-}

@@ -9,7 +9,8 @@
 
 .footer {
   position: relative;
-  top: 40vh;
+  top: 10vh;
+  margin-top: 45vh;
   width: 100%;
   background: #000d46;
   min-height: 150px;

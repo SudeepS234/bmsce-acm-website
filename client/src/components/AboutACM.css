@@ -1,13 +1,78 @@
+/* Ensure carousel images fit the container height */
+.carousel-item img {
+    width: 100%; /* Match the height of the container */
+    /* height: auto; Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fills the container neatly */
+    max-width: 800px;
+    margin: auto; /* Prevent default inline-block behavior */
+}
+
+/* General Styling for Carousel */
 .carousel {
     position: relative;
     top: 20vh;
     bottom: 20vh;
+    margin: 10vh 0;
 }
 
+/* Ensure image slider has flexible padding */
 .imageSlider {
-    padding: 10%;
+    padding: 5%; /* Adjust padding for better layout */
+    position: relative;
+    top: 20vh;
 }
 
+/* Global margin reset */
 * {
-    margin-bottom: 10vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive Styling for Mobile Screens */
+@media (max-width: 768px) {
+    .carousel {
+        top: 10vh; /* Adjust spacing for smaller screens */
+        bottom: 10vh;
+    }
+
+    .carousel-item img {
+        width: 100%; /* Use full container width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Cover the container without stretching */
+        max-width: none; /* Remove width limitation */
+        max-height: none; /* Remove height limitation */
+    }
+
+    .imageSlider {
+        padding: 5%; /* Optimize padding for mobile */
+    }
+
+    .carousel-caption h5 {
+        font-size: 1rem; /* Adjust caption title size */
+    }
+
+    .carousel-caption p {
+        font-size: 0.875rem; /* Adjust caption description size */
+    }
+}
+
+/* Responsive Styling for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carousel {
+        top: 15vh;
+        bottom: 15vh;
+    }
+
+    .carousel-item img {
+        height: 60vh; /* Ensure images are more prominent on tablets */
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.25rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
 }

@@ -51,6 +51,7 @@
   line-height: 2.0;
   max-width: 60ch;
   margin-top: 0;
+  text-align: justify;
 }
 
 .quick-about-us h1 {
@@ -64,6 +65,10 @@
   border-radius: 15px;
 }
 
+.big-brand-image {
+  position: relative;
+  right: 10px;
+}
 /* Responsive Styling */
 @media (max-width: 768px) {
   .about-content {
@@ -110,7 +115,11 @@
   justify-content: flex-start;
   padding-top: 20px;
   text-align: left;
-  margin-left: 20px;
+  background: url('./images/oooscillate.png');
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
   /* Adjust for left margin */
 }
 
@@ -177,6 +186,10 @@
 @media (max-width: 768px) {
   .tagline {
     font-size: 2.5rem;
+  }
+
+  .tag-div {
+    padding-left: 1em;
   }
 }
 
@@ -259,7 +272,9 @@
 
 .responsive {
   position: relative;
-  top: 25vh;
+  top: 45vh;
+  width: 100%;
+  margin: 10vh 0 10vh 0;
 } 
 
 .responsive p{
@@ -267,12 +282,13 @@
   margin: 0px auto;
   display: flex;
   justify-content: center;
+  font-size: 3em;
 } 
 
 
 @media screen and (max-width: 500px) {
   .responsive {
-    padding: 0px 20px;
+    font-size: 3em;
   }
 
   .responsive img {

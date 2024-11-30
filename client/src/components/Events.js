@@ -20,10 +20,16 @@ const Events = () => {
   }, []);
 
   const additionalEvents = [
-    { title: 'Event Title 1', imgSrc: './images/event1.jpg' },
-    { title: 'Event Title 2', imgSrc: './images/event2.jpg' },
-    { title: 'Event Title 3', imgSrc: './images/event3.jpg' },
-    // Add more objects as needed
+    { title: 'Bids & Bytes', imgSrc: './images/bids-and-bytes.jpg' },
+    { title: 'Orientation', imgSrc: './images/orientation.jpg' },
+    { title: 'Byte Battle', imgSrc: './images/byte-battle.jpg' },
+    { title: 'Ctrl + Alt + Create', imgSrc: './images/ctrl-alt.jpg' },
+    { title: 'Jumble Jam 2.0', imgSrc: './images/jumble-jam-2.0.jpg' },
+    { title: 'Art of Encryption', imgSrc: './images/art-of-enc.jpg' },
+    { title: 'IPR & Patents in Technology', imgSrc: './images/ipr.jpg' },
+    { title: 'Innovision', imgSrc: './images/innovision.jpg' },
+    { title: 'Blockchain', imgSrc: './images/blockchain.jpg' },
+    { title: 'Web Wars', imgSrc: './images/web-wars.jpg' },
   ];
 
   const toggleShowMore = () => setShowMore(!showMore);
@@ -36,14 +42,14 @@ const Events = () => {
       </div>
 
       <div className="event-card orange-card hover-slide">
-        <img src="./images/byte-battle.jpg" alt="Byte Battle" className="event-image" />
-        <div className="hover-text">Byte Battle</div>
+        <img src="./images/duos-dash-2.0.jpg" alt="Byte Battle" className="event-image" />
+        <div className="hover-text">Duo's Dash 2.0</div>
       </div>
       
       {/* Other fixed event cards */}
       <div className="event-card grey-card hover-slide">
-        <img src="./images/innovision.jpg" alt="Innovision" className="event-image" />
-        <div className="hover-text">Innovision</div>
+        <img src="./images/ggambit.jpg" alt="Innovision" className="event-image" />
+        <div className="hover-text">Grandmaster's Gambit 2.0</div>
       </div>
       <div className="event-card red-card hover-slide">
         <img src="./images/cipher-quest.jpg" alt="Cipher Quest" className="event-image" />

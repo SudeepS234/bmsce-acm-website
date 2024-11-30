@@ -51,7 +51,7 @@ const Homepage = ({ scrollToSection }) => {
             <img src="./images/logo.png" alt="Brand Logo" className="brand-logo-large fade-in" />
           </div>
           <div className='typewriter'>
-            <div>
+            <div className='tag-div'>
               <p className="tagline">Transforming Passion into Progress.</p>
             </div>
           </div>
@@ -62,8 +62,8 @@ const Homepage = ({ scrollToSection }) => {
         <div className="quick-about-us">
           <h1>About Us</h1>
           <div className="about-content">
-            <img src="./images/quick-about.jpg" alt="Quick About Us" className="about-us-image" />
-            <p>The ACM Student Chapter is a student-run organization that provides opportunities for students to learn about computing and computer science, network with other students and professionals, and participate in events and activities that promote the advancement of computing. If you’re interested in learning more about computing or computer science, or if you’re looking for a way to get involved in the computing community, then the BMSCE ACM Student Chapter is the perfect place for you!</p>
+            <img src="./images/about-image.jpg" alt="Quick About Us" className="about-us-image" />
+            <p>BMSCE ACM Student Chapter is a student-run organization that provides opportunities for students to learn about computing and computer science, network with other students and professionals, and participate in events and activities that promote the advancement of computing. If you’re interested in learning more about computing or computer science, or if you’re looking for a way to get involved in the computing community, then the BMSCE ACM Student Chapter is the perfect place for you!</p>
           </div>
         </div>
       </section>

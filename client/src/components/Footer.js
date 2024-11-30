@@ -13,22 +13,12 @@ const Footer = ({ scrollToSection }) => {
       </div>
       <ul className="social-icon">
         <li className="social-icon__item">
-          <a className="social-icon__link" href="#">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </li>
-        <li className="social-icon__item">
-          <a className="social-icon__link" href="#">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-        </li>
-        <li className="social-icon__item">
-          <a className="social-icon__link" href="#">
+          <a className="social-icon__link" href="https://www.linkedin.com/company/bmsce-acm-student-chapter/" target="_blank">
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
         </li>
         <li className="social-icon__item">
-          <a className="social-icon__link" href="#">
+          <a className="social-icon__link" href="https://www.instagram.com/bmsce_acm/" target="_blank">
             <ion-icon name="logo-instagram"></ion-icon>
           </a>
         </li>
@@ -40,7 +30,7 @@ const Footer = ({ scrollToSection }) => {
         <li className="menu__item" onClick={() => scrollToSection('gallery')}><a className="menu__link">Gallery</a></li>
         <li className="menu__item" onClick={() => scrollToSection('aboutACM')}><a className="menu__link">About Us</a></li>
       </ul>
-      <p>&copy;Made with   by Sudeep | BMSCE ACM Student Chapter | All rights reserved.</p>
+      <p>Made with ♡ by Sudeep | BMSCE ACM Student Chapter | All rights reserved.</p>
     </footer>
   );
 };

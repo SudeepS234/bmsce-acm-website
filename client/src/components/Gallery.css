@@ -1,12 +1,12 @@
 .gallery-container {
     position: relative;
-    top: 30vh;
+    top: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 40px 20px 50px 20px;
+    margin: 20vh 20px 50px 20px;
 }
 
 .gallery-container .heading {
